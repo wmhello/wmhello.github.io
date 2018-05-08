@@ -1,43 +1,13 @@
-<footer class="footer">
-    <div class="container">
-        <div class="content has-text-centered">
-            <p>
-                Theme: <strong><a href="https://github.com/erayaydin/jekyll-bulma">Jekyll Bulma</a></strong> by <a href="http://github.com/erayaydin">Eray Aydın</a>. The source code is licensed
-                <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
-                is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC ANS 4.0</a>.
-            </p>
-            <p>
-                {% if site.social.github %}
-                <a class="icon" href="https://github.com/{{ site.social.github }}">
-                    <i class="fa fa-github"></i>
-                </a>
-                {% endif %}
-                {% if site.social.email %}
-                <a class="icon" href="mailto:{{ site.social.email }}">
-                    <i class="fa fa-envelope-o"></i>
-                </a>
-                {% endif %}
-                {% if site.social.facebook %}
-                <a class="icon" href="https://facebook.com/{{ site.social.facebook }}">
-                    <i class="fa fa-facebook"></i>
-                </a>
-                {% endif %}
-                {% if site.social.twitter %}
-                <a class="icon" href="https://twitter.com/{{ site.social.twitter }}">
-                    <i class="fa fa-twitter"></i>
-                </a>
-                {% endif %}
-                {% if site.social.instagram %}
-                <a class="icon" href="https://instagram.com/{{ site.social.instagram }}">
-                    <i class="fa fa-instagram"></i>
-                </a>
-                {% endif %}
-                {% if site.social.tumblr %}
-                <a class="icon" href="https://{{ site.social.tumblr }}.tumblr.com">
-                    <i class="fa fa-tumblr"></i>
-                </a>
-                {% endif %}
-            </p>
-        </div>
-    </div>
+<footer class="footer" role="contentinfo">
+	<div class="container">
+		<p class="copyright">Copyright &copy; 2014-{{ site.time | date: '%Y' }} <a href="{{site.resume_site}}"><code>{{ site.author }}</code></a>.</p>
+		<p>Powered by <a href="http://jekyllrb.com">Jekyll</a>, themed from <a href="http://lesscss.cn/">Less</a>, refactored by <a href="http://www.hifreud.com/">Freud Kang</a></p>
+	</div>
 </footer>
+
+<script src="{{ '/styles/js/jquery.min.js' | prepend: site.baseurl }}"></script>
+<script src="{{ '/styles/js/bootstrap.min.js' | prepend: site.baseurl }}"></script>
+<script src="{{ '/styles/js/holder.min.js' | prepend: site.baseurl }}"></script>
+<script src="{{ '/styles/js/lessismore.js' | prepend: site.baseurl }}"></script>
+<script src="{{ '/styles/js/application.js' | prepend: site.baseurl }}"></script>
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>

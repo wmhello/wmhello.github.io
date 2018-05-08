@@ -1,52 +1,25 @@
-name: Eray Aydın
-description: "Senior PHP Developer and Linux System Administrator, Free Software Fan, Archy (On Way Trust User), Junior Game Developer"
-url: https://erayaydin.github.io
-download: "https://github.com/erayaydin/erayaydin.github.io/archive/master.zip"
-social:
-  github: erayaydin
-  email: aydineray@mail.com
-  facebook:
-  twitter: erayaydi
-  instagram:
-  tumblr:
-author:
-  name: Eray AYDIN
-  bio: "Senior PHP Developer and Linux System Administrator, Free Software Fan, Archy (On Way Trust User), Junior Game Developer"
-  email: aydineray@mail.com
-  image: /assets/images/author.jpg
-  github: erayaydin
-  facebook: erayaydi
-  twitter: erayaydi
-  instagram:
-  tumblr:
-  show_on_post: true
-system:
-  fb_app: "272683263159070"
-analytics:
-  google: "UA-81189502-3"
-permalink: /:categories/:title/
-sass:
-  style: compressed
-paginate: 5
-paginate_path: "/:num/"
+# Site settings
+name: 学思结合
+email: 871228582@qq.com
+author: wmhello
+url: http://wmhello.github.com
+resume_site: http://wmhello.github.com/
+github: https://github.com/wmhello/
+baseurl: ""
+description: 真正决定一个人成就的 不是天分 不是运气 而是严格的自律和高强度的付出
+meta_description: 王敏;个人博客;学而不思则罔;思而不学则殆;选择了就不要放弃
+motto: 策略和坚持,而坚持本身就是最重要的策略. 
+banner: 学而不思则罔，思而不学则殆。
+
+#permalink: /:categories/:year/:month/:day/:title/
+permalink: /:year/:month/:day/:title/
+paginate: 10
+
+exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
+
+github_username: wmhello
+
+# Build settings
 markdown: kramdown
-plugins:
-  - jekyll-paginate
-  - jekyll-feed
-  - jekyll-gist
 
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - README.md
-  - LICENSE
-  - CNAME
-  - vendor
-
-defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      comments: true
+baidu_analysis: 94be4b0f9fc5d94cc0d0415ea6761ae9
