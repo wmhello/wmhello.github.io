@@ -71,12 +71,17 @@ Vue.use(VeeValidate);
 </div>
 ~~~
 #### 代码解析
-* * * * *
+
 > v-validate="'required|email'"
+>
 > v-validate            是由该插件提供的指令 作用于html上
+>
 > "'required|email'"  字段验证的规则，注意双引号之内必须有单引号，多个规则之间用|连接
+>
 > errors.has('email')   判断emai字段值是否验证通过  email内容指向input的name属性 必须设置成一样  这意味着要用该插件，input上的name属性必须设置
+>
 > errors.first('email')  email字段验证不通过时显示相关联的提示信息
+>
 #### 验证规则
 [地址](http://vee-validate.logaretm.com/validation.html#available-rules)
 
@@ -116,7 +121,9 @@ var app = new Vue({
 * * * * *
 
 > VeeValidate（浏览器引入js后建立了一个全局对象）
+>
 > dict  翻译的内容，其中attributes对象表示字段，messages对象表示提示信息
+> 
 ##### [本地化进一步参考](http://vee-validate.logaretm.com/localization.html#translation)
 
 #### 常用方法
@@ -161,5 +168,5 @@ var app = new Vue({
 
 ### 参考文档
 >官网:[地址](https://github.com/baianat/vee-validate)
-> 
+>
 >他人项目: [Vue 全家桶 + 前端实现登录拦截、登出、校验、购物车等功能](https://github.com/G-Bruin/vue-vuex-VeeValidate-vueResource-github)
